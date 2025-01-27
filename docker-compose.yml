@@ -21,15 +21,15 @@ services:
     networks:
       - combined-network
 
-  application:
-    build: ./application
-    container_name: application
+  react_app:
+    build: ./react_app
+    container_name: react_app
     networks:
       - combined-network
 
-  tg_bot:
-    build: ./tg_bot
-    container_name: tg_bot
+  nest_api:
+    build: ./nest_api
+    container_name: nest_api
     networks:
       - combined-network
 
